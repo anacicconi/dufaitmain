@@ -45,85 +45,494 @@ $mq: (
     flex: auto;
 }
 
-@for $i from 0 through $columns {
-    .col-#{$i} {
-        width: calc(100% * ($i / 12));
+/* COL CLASS */
+.col-0 {
+    width: 0%;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.67%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.67%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.67%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.67%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* PUSH CLASS */
+.push-0 {
+    margin-left: 0%;
+}
+.push-1 {
+    margin-left: 8.33%;
+}
+.push-2 {
+    margin-left: 16.67%;
+}
+.push-3 {
+    margin-left: 25%;
+}
+.push-4 {
+    margin-left: 33.33%;
+}
+.push-5 {
+    margin-left: 41.67%;
+}
+.push-6 {
+    margin-left: 50%;
+}
+.push-7 {
+    margin-left: 58.33%;
+}
+.push-8 {
+    margin-left: 66.67%;
+}
+.push-9 {
+    margin-left: 75%;
+}
+.push-10 {
+    margin-left: 83.33%;
+}
+.push-11 {
+    margin-left: 91.67%;
+}
+.push-12 {
+    margin-left: 100%;
+}
+
+/* PULL CLASS */
+.pull-0 {
+    margin-right: 0%;
+}
+.pull-1 {
+    margin-right: 8.33%;
+}
+.pull-2 {
+    margin-right: 16.67%;
+}
+.pull-3 {
+    margin-right: 25%;
+}
+.pull-4 {
+    margin-right: 33.33%;
+}
+.pull-5 {
+    margin-right: 41.67%;
+}
+.pull-6 {
+    margin-right: 50%;
+}
+.pull-7 {
+    margin-right: 58.33%;
+}
+.pull-8 {
+    margin-right: 66.67%;
+}
+.pull-9 {
+    margin-right: 75%;
+}
+.pull-10 {
+    margin-right: 83.33%;
+}
+.pull-11 {
+    margin-right: 91.67%;
+}
+.pull-12 {
+    margin-right: 100%;
+}
+
+/* DESKTOP MEDIA QUERY */
+@media (max-width: $desktop) {
+    .col-d-0 {
+        width: 0%;
+    }
+    .col-d-1 {
+        width: 8.33%;
+    }
+    .col-d-2 {
+        width: 16.67%;
+    }
+    .col-d-3 {
+        width: 25%;
+    }
+    .col-d-4 {
+        width: 33.33%;
+    }
+    .col-d-5 {
+        width: 41.67%;
+    }
+    .col-d-6 {
+        width: 50%;
+    }
+    .col-d-7 {
+        width: 58.33%;
+    }
+    .col-d-8 {
+        width: 66.67%;
+    }
+    .col-d-9 {
+        width: 75%;
+    }
+    .col-d-10 {
+        width: 83.33%;
+    }
+    .col-d-11 {
+        width: 91.67%;
+    }
+    .col-d-12 {
+        width: 100%;
+    }
+
+    .push-d-0 {
+        margin-left: 0%;
+    }
+    .push-d-1 {
+        margin-left: 8.33%;
+    }
+    .push-d-2 {
+        margin-left: 16.67%;
+    }
+    .push-d-3 {
+        margin-left: 25%;
+    }
+    .push-d-4 {
+        margin-left: 33.33%;
+    }
+    .push-d-5 {
+        margin-left: 41.67%;
+    }
+    .push-d-6 {
+        margin-left: 50%;
+    }
+    .push-d-7 {
+        margin-left: 58.33%;
+    }
+    .push-d-8 {
+        margin-left: 66.67%;
+    }
+    .push-d-9 {
+        margin-left: 75%;
+    }
+    .push-d-10 {
+        margin-left: 83.33%;
+    }
+    .push-d-11 {
+        margin-left: 91.67%;
+    }
+    .push-d-12 {
+        margin-left: 100%;
+    }
+
+    .pull-d-0 {
+        margin-right: 0%;
+    }
+    .pull-d-1 {
+        margin-right: 8.33%;
+    }
+    .pull-d-2 {
+        margin-right: 16.67%;
+    }
+    .pull-d-3 {
+        margin-right: 25%;
+    }
+    .pull-d-4 {
+        margin-right: 33.33%;
+    }
+    .pull-d-5 {
+        margin-right: 41.67%;
+    }
+    .pull-d-6 {
+        margin-right: 50%;
+    }
+    .pull-d-7 {
+        margin-right: 58.33%;
+    }
+    .pull-d-8 {
+        margin-right: 66.67%;
+    }
+    .pull-d-9 {
+        margin-right: 75%;
+    }
+    .pull-d-10 {
+        margin-right: 83.33%;
+    }
+    .pull-d-11 {
+        margin-right: 91.67%;
+    }
+    .pull-d-12 {
+        margin-right: 100%;
     }
 }
 
-@for $i from 0 through $columns {
-    .push-#{$i} {
-        margin-left: calc(100% * ($i / 12));
+/* TABLET MEDIA QUERY */
+@media (max-width: $tablet) {
+    .col-t-0 {
+        width: 0%;
+    }
+    .col-t-1 {
+        width: 8.33%;
+    }
+    .col-t-2 {
+        width: 16.67%;
+    }
+    .col-t-3 {
+        width: 25%;
+    }
+    .col-t-4 {
+        width: 33.33%;
+    }
+    .col-t-5 {
+        width: 41.67%;
+    }
+    .col-t-6 {
+        width: 50%;
+    }
+    .col-t-7 {
+        width: 58.33%;
+    }
+    .col-t-8 {
+        width: 66.67%;
+    }
+    .col-t-9 {
+        width: 75%;
+    }
+    .col-t-10 {
+        width: 83.33%;
+    }
+    .col-t-11 {
+        width: 91.67%;
+    }
+    .col-t-12 {
+        width: 100%;
+    }
+
+    .push-t-0 {
+        margin-left: 0%;
+    }
+    .push-t-1 {
+        margin-left: 8.33%;
+    }
+    .push-t-2 {
+        margin-left: 16.67%;
+    }
+    .push-t-3 {
+        margin-left: 25%;
+    }
+    .push-t-4 {
+        margin-left: 33.33%;
+    }
+    .push-t-5 {
+        margin-left: 41.67%;
+    }
+    .push-t-6 {
+        margin-left: 50%;
+    }
+    .push-t-7 {
+        margin-left: 58.33%;
+    }
+    .push-t-8 {
+        margin-left: 66.67%;
+    }
+    .push-t-9 {
+        margin-left: 75%;
+    }
+    .push-t-10 {
+        margin-left: 83.33%;
+    }
+    .push-t-11 {
+        margin-left: 91.67%;
+    }
+    .push-t-12 {
+        margin-left: 100%;
+    }
+
+    .pull-t-0 {
+        margin-right: 0%;
+    }
+    .pull-t-1 {
+        margin-right: 8.33%;
+    }
+    .pull-t-2 {
+        margin-right: 16.67%;
+    }
+    .pull-t-3 {
+        margin-right: 25%;
+    }
+    .pull-t-4 {
+        margin-right: 33.33%;
+    }
+    .pull-t-5 {
+        margin-right: 41.67%;
+    }
+    .pull-t-6 {
+        margin-right: 50%;
+    }
+    .pull-t-7 {
+        margin-right: 58.33%;
+    }
+    .pull-t-8 {
+        margin-right: 66.67%;
+    }
+    .pull-t-9 {
+        margin-right: 75%;
+    }
+    .pull-t-10 {
+        margin-right: 83.33%;
+    }
+    .pull-t-11 {
+        margin-right: 91.67%;
+    }
+    .pull-t-12 {
+        margin-right: 100%;
     }
 }
 
-@for $i from 0 through $columns {
-    .pull-#{$i} {
-        margin-right: calc(100% * ($i / 12));
+/* MOBILE MEDIA QUERY */
+@media (max-width: $mobile) {
+    .col-m-0 {
+        width: 0%;
     }
-}
-
-@each $key, $val in $mq {
-    // DESKTOP
-    @media (max-width: $desktop) {
-        @for $i from 0 through $columns {
-            .col-d-#{$i} {
-                width: calc(100% * ($i / 12));
-            }
-        }
-
-        @for $i from 0 through $columns {
-            .push-d-#{$i} {
-                margin-left: calc(100% * ($i / 12));
-            }
-        }
-
-        @for $i from 0 through $columns {
-            .pull-d-#{$i} {
-                margin-right: calc(100% * ($i / 12));
-            }
-        }
+    .col-m-1 {
+        width: 8.33%;
     }
-
-    // TABLET
-    @media (max-width: $tablet) {
-        @for $i from 0 through $columns {
-            .col-t-#{$i} {
-                width: calc(100% * ($i / 12));
-            }
-        }
-
-        @for $i from 0 through $columns {
-            .push-t-#{$i} {
-                margin-left: calc(100% * ($i / 12));
-            }
-        }
-
-        @for $i from 0 through $columns {
-            .pull-t-#{$i} {
-                margin-right: calc(100% * ($i / 12));
-            }
-        }
+    .col-m-2 {
+        width: 16.67%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.67%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.67%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.67%;
+    }
+    .col-m-12 {
+        width: 100%;
     }
 
-    // MOBILE
-    @media (max-width: $mobile) {
-        @for $i from 0 through $columns {
-            .col-m-#{$i} {
-                width: calc(100% * ($i / 12));
-            }
-        }
+    .push-m-0 {
+        margin-left: 0%;
+    }
+    .push-m-1 {
+        margin-left: 8.33%;
+    }
+    .push-m-2 {
+        margin-left: 16.67%;
+    }
+    .push-m-3 {
+        margin-left: 25%;
+    }
+    .push-m-4 {
+        margin-left: 33.33%;
+    }
+    .push-m-5 {
+        margin-left: 41.67%;
+    }
+    .push-m-6 {
+        margin-left: 50%;
+    }
+    .push-m-7 {
+        margin-left: 58.33%;
+    }
+    .push-m-8 {
+        margin-left: 66.67%;
+    }
+    .push-m-9 {
+        margin-left: 75%;
+    }
+    .push-m-10 {
+        margin-left: 83.33%;
+    }
+    .push-m-11 {
+        margin-left: 91.67%;
+    }
+    .push-m-12 {
+        margin-left: 100%;
+    }
 
-        @for $i from 0 through $columns {
-            .push-m-#{$i} {
-                margin-left: calc(100% * ($i / 12));
-            }
-        }
-
-        @for $i from 0 through $columns {
-            .pull-m-#{$i} {
-                margin-right: calc(100% * ($i / 12));
-            }
-        }
+    .pull-m-0 {
+        margin-right: 0%;
+    }
+    .pull-m-1 {
+        margin-right: 8.33%;
+    }
+    .pull-m-2 {
+        margin-right: 16.67%;
+    }
+    .pull-m-3 {
+        margin-right: 25%;
+    }
+    .pull-m-4 {
+        margin-right: 33.33%;
+    }
+    .pull-m-5 {
+        margin-right: 41.67%;
+    }
+    .pull-m-6 {
+        margin-right: 50%;
+    }
+    .pull-m-7 {
+        margin-right: 58.33%;
+    }
+    .pull-m-8 {
+        margin-right: 66.67%;
+    }
+    .pull-m-9 {
+        margin-right: 75%;
+    }
+    .pull-m-10 {
+        margin-right: 83.33%;
+    }
+    .pull-m-11 {
+        margin-right: 91.67%;
+    }
+    .pull-m-12 {
+        margin-right: 100%;
     }
 }
