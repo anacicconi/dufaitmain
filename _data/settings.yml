@@ -1,0 +1,39 @@
+---
+#-------------------------------
+# General Site Settings
+title: Du Fait Main
+logo: logo.jpg # You can add own logo.
+description: Du Fait Main - Blog de couture et tricot
+
+#-------------------------------
+# Author Settings
+author:
+    name: Ana
+    image: presentation.jpg
+    say-hello: Salut ! Je suis <strong>Ana</strong>
+    bio: Tricoteuse passionnée et apprentie couturière, je partage ici <strong>du fait main</strong>. Inspirée par les designs minimalistes et motivée par la consommation consciente, je privilégie des créations <strong>simples</strong>, <strong>utiles</strong>, et <strong>durables</strong>.
+
+#-------------------------------
+# Contact links
+# twitter: https://twitter.com/ # Add your Twitter handle
+# facebook: https://facebook.com/ # Add your Facebook handle
+# dribbble: https://dribbble.com/ # Add your Dribbble handle
+instagram: https://www.instagram.com/minimalistknitting/ # Add your Instagram handle
+# pinterest: https://pinterest.com/ # Add your Pinterest handle
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: du-fait-main # add your shortname for Disqus Comment. For example mr-brown
+
+#-------------------------------
+# Instagram Feed
+instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
+instagram-profile: minimalistknitting # Add instagram username
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+#-------------------------------
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
