@@ -47,7 +47,7 @@ $mq: (
 
 @for $i from 0 through $columns {
     .col-#{$i} {
-        width: calc($i / 12) * 100%;
+        width: +calc($i / 12) * 100%;
     }
 }
 
